@@ -1,0 +1,1178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+/* envato */
+.preview_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 54px;
+  background-color: #262626;
+  z-index: 9999999;
+  line-height: 54px;
+}
+
+.preview_header img {
+  width: 170px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.preview_header button {
+  font-size: 14px;
+  padding: 5px 20px;
+  line-height: 1.5;
+  background-color: #82b440;
+  color: white;
+  margin-right: 25px;
+  border: none;
+  border-radius: 4px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #6f9a37;
+  position: relative;
+}
+
+/* thanh topbar */
+header {
+  height: auto;
+  position: fixed;
+  z-index: 9999999;
+  width: 97%;
+  padding: 15px 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  margin: 20px 20px;
+  margin-top: 70px;
+  border-radius: 8px;
+  /* animation: scroll 1s; */
+}
+header:after {
+  content: "";
+  height: 14px;
+  width: 98%;
+  bottom: -10px;
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  background-color: #f2f6f7;
+  opacity: 0.2;
+  right: 12px;
+}
+
+nav li {
+  font-weight: 500;
+  color: #231f20;
+  font-size: 16px;
+  border-radius: 30 px;
+  padding: 10 px 0;
+  display: inline-block;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  margin: 0 30px;
+}
+
+header .right button {
+  position: relative;
+  padding: 20px;
+  background-color: #f39c12;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+header .right i {
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.home {
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.about {
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #231f20;
+}
+
+nav ul li:first-child::after {
+  content: "";
+  width: 150%;
+  background-color: #f39c12;
+  position: absolute;
+  left: -10px;
+  top: 190%;
+  bottom: 0;
+  height: 4px;
+  border-radius: 2px 2px 0 0;
+}
+
+.home:hover .item {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.about:hover .item2 {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.item {
+  position: absolute;
+  background-color: #f39c12;
+  top: 247%;
+  left: -30px;
+  width: 155px;
+  border-radius: 5px;
+  padding: 24px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateY(15px);
+}
+
+.item p {
+  padding: 10px 0px;
+  font-size: 12.5px;
+}
+
+.item2 {
+  position: absolute;
+  background-color: #f39c12;
+  top: 247%;
+  left: -30px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 24px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateY(15px);
+}
+
+.item2 p {
+  padding: 13px 0px;
+  font-size: 12.5px;
+}
+
+nav ul li:last-child {
+  cursor: pointer;
+}
+
+.right button:hover {
+  filter: brightness(108%);
+  transform: scale(1.015);
+}
+
+.banner {
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://elanta.app/nazar/tastyc-demo/img/banners/banner-1.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.content h4 {
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 2px;
+  left: 49px;
+  margin-top: 30px;
+}
+.content h4::before {
+  position: absolute;
+  top: 16px;
+  left: -50px;
+  content: "";
+  display: inline;
+  background-color: #f39c12;
+  width: 35px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.content {
+  line-height: 2.5em;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  line-height: 2.5cm;
+  font-weight: 800;
+}
+
+.content h3 {
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  text-shadow: 0 5px 20px rgb(26 47 51 / 95%);
+  line-height: 0.9cm;
+}
+.button {
+  margin-left: -10px;
+  margin-top: 10px;
+}
+.button button:nth-child(1) {
+  position: relative;
+  padding: 23px;
+  background-color: #f39c12;
+  cursor: pointer;
+  margin: 10px 10px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.button button:nth-child(1)::after {
+  content: "";
+  height: 7px;
+  width: calc(100% - 20px);
+  position: absolute;
+  bottom: -7px;
+  border-radius: 0 0 5px 5px;
+  background-color: #f2f6f7;
+  opacity: 0.15;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  left: 10px;
+}
+.button button:nth-child(1):hover {
+  filter: brightness(108%);
+  transform: scale(1.015);
+  z-index: 99999;
+}
+.button button:nth-child(1):hover:after {
+  transform: scale(0.95);
+  bottom: -4.5px;
+  z-index: 99999;
+}
+
+.button button:nth-child(2) {
+  background-color: transparent;
+  color: #fff;
+  border: 0;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.icon {
+  margin-top: 30px;
+}
+.icon i {
+  padding: 0 5px;
+}
+.icon i:nth-child(1) {
+  color: #f39c12;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.icon i:nth-child(3) {
+  margin-right: 60px;
+}
+
+.dynamic_content {
+  position: relative;
+  z-index: 10000;
+  border-radius: 10px;
+  width: 93%;
+  box-shadow: 0 5px 10px 0 rgb(26 47 51 / 40%);
+  margin-left: 45px;
+  margin-right: 45px;
+  background-color: #fcfcfc;
+  opacity: 1;
+  transform: translateY(-40px);
+  transition: 0.6s ease-in-out;
+}
+
+.content_box:before {
+  content: "";
+  height: 10px;
+  width: 98%;
+  top: -10px;
+  position: absolute;
+  border-radius: 5px 5px 0 0;
+  background-color: #f2f6f7;
+  opacity: 0.7;
+  right: 12px;
+}
+
+.container .scroll_hint {
+  height: 74px;
+  width: 74px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 37px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+}
+
+.container .inside_scoll {
+  transform: scale(0.8);
+  top: -5 px;
+  position: relative;
+  height: 40px;
+  width: 25px;
+  border: solid 2px #1a2f33;
+  border-radius: 20px;
+}
+
+.container .inside_scoll:before {
+  content: "";
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #1a2f33;
+  position: absolute;
+  top: 15px;
+  left: 40.5%;
+  transition: all 0.4s linear;
+  animation: scroll 0.6s linear 0s infinite alternate-reverse;
+}
+
+.container .scroll_hint:after {
+  transform: scaleX(1.25) scaleY(1.09);
+  content: "";
+  width: 74px;
+  height: 37px;
+  opacity: 0.15;
+  border-radius: 1000px 1000px 0 0;
+  position: absolute;
+  top: -11.6%;
+  background-color: #f2f6f7;
+  z-index: -2;
+}
+
+.invite {
+  position: absolute;
+  height: 100%;
+  top: 50px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  z-index: 99999;
+  /* align-items: center; */
+  /* justify-content: space-around; */
+}
+
+.invite .left img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.invite .left {
+  position: relative;
+}
+
+.invite .right {
+  padding: 50px 20px 15px;
+  width: 90%;
+  height: 70%;
+  margin-right: 40px;
+  margin-left: 15px;
+  line-height: 1cm;
+}
+
+.invite .right h4 {
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #1a2f33;
+  left: 49px;
+}
+
+.invite .right h4::before {
+  position: absolute;
+  top: 16px;
+  left: -50px;
+  content: "";
+  display: inline;
+  background-color: #f39c12;
+  width: 35px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.invite .right h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  line-height: 1.5cm;
+  font-weight: 800;
+  color: #1a2f33;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.invite .right p {
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  line-height: 0.8cm;
+}
+
+.invite .right button {
+  position: relative;
+  padding: 20px;
+  background-color: #f39c12;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: 30px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.invite .right i {
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.invite .right i:hover {
+  color: #f39c12;
+}
+.invite .left button {
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+.invite .left i {
+  text-align: center;
+  margin-bottom: 17px;
+  font-size: 20px;
+}
+
+.border {
+  height: 97%;
+  width: 88%;
+  margin-left: 80px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  border-bottom: dotted 4px rgba(26, 47, 51, 0.7);
+  opacity: 0.3;
+}
+
+.title {
+  text-align: center;
+  color: #1a2f33;
+  position: relative;
+}
+
+.title h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  line-height: 1.5cm;
+  font-weight: 800;
+  color: #1a2f33;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 20px 0;
+}
+
+.title p {
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  line-height: 0.8cm;
+}
+
+.title h4 {
+  padding: 10px 0;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.title h4::before {
+  position: absolute;
+  top: -7px;
+  right: 652px;
+  content: "";
+  display: inline;
+  background-color: #f39c12;
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.feature .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.icon1 {
+  padding: 10px 10px;
+  line-height: 1cm;
+}
+
+.icon1 h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 10px 0;
+}
+
+.icon1 p {
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+
+  line-height: 0.7cm;
+}
+
+.border2 {
+  height: 9%;
+  width: 88%;
+  margin-left: 80px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  border-bottom: dotted 4px rgba(26, 47, 51, 0.7);
+  opacity: 0.3;
+}
+
+.cover {
+  /* position: relative; */
+  overflow: hidden;
+  width: 100%;
+  border-radius: 10px;
+  background-size: 100%;
+  box-shadow: 0 5px 10px 0 rgb(26 47 51 / 11%);
+  padding: 20px 0;
+}
+
+.hours {
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 26, 27, 0.6),
+      rgba(38, 47, 53, 0.5)
+    ),
+    url(https://elanta.app/nazar/tastyc-demo/img/menu/4.jpg);
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 89%;
+  height: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 75px;
+  box-shadow: 0 10px 15px 0 rgb(26 47 51 / 11%);
+  z-index: 99999;
+}
+
+.clock {
+  color: #fff;
+  line-height: 1.5cm;
+  margin-left: 50px;
+}
+.clock h4 {
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+  left: 49px;
+}
+
+.clock h4::before {
+  position: absolute;
+  top: 23px;
+  left: -50px;
+  content: "";
+  display: inline;
+  background-color: #f39c12;
+  width: 35px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+.hours .timeworking {
+  background-color: #fff;
+  text-align: center;
+  line-height: 0.9cm;
+  height: 100%;
+  width: 400px;
+  padding: 50px 0;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.hours .timeworking h4 {
+  font-size: 13px;
+  padding-top: 10px;
+}
+.hours .timeworking h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 23.5px;
+  font-weight: 600;
+}
+
+span {
+  color: #f39c12;
+  font-weight: 800;
+  font-size: 23.5px;
+}
+
+.clock h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 80px;
+  line-height: 1.5cm;
+  font-weight: 800;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.clock p {
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  line-height: 0.8cm;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 20px;
+}
+
+.row .one h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  line-height: 1.5cm;
+  font-weight: 800;
+  color: #1a2f33;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.row .one span {
+  font-family: "Playfair Display", serif;
+  font-size: 65px;
+  /* padding-bottom: 5px; */
+}
+
+.row .one h4 {
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 3px;
+  padding-top: 10px;
+}
+
+.feature::after {
+  content: "";
+  height: 10px;
+  width: 98%;
+  bottom: -10px;
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  background-color: #f2f6f7;
+  opacity: 0.7;
+  right: 12px;
+}
+
+.dowload {
+  position: relative;
+  height: 100%;
+  /* padding: 20px 20px; */
+  display: flex;
+  align-items: center;
+  background-image: url(https://elanta.app/nazar/tastyc-demo/img/phone.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 42%;
+  color: #fff;
+  top: 0;
+}
+.dowload .content {
+  margin-bottom: 30px;
+  position: absolute;
+  top: -50px;
+}
+.button2 button {
+  margin-left: -10px;
+  margin-top: 10px;
+  position: relative;
+  padding: 23px;
+  background-color: #f39c12;
+  cursor: pointer;
+  margin: 10px 10px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.button2 button::after {
+  content: "";
+  height: 7px;
+  width: calc(100% - 20px);
+  position: absolute;
+  bottom: -7px;
+  border-radius: 0 0 5px 5px;
+  background-color: #f2f6f7;
+  opacity: 0.15;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  left: 10px;
+}
+
+.button2 button:hover:after {
+  transform: scale(0.95);
+  bottom: -4.5px;
+}
+
+.button2 i {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.title2 {
+  text-align: center;
+  color: #1a2f33;
+  position: relative;
+  top: 35px;
+  bottom: 15px;
+}
+
+.title2 h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  line-height: 1.5cm;
+  font-weight: 800;
+  color: #1a2f33;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  padding: 20px 0;
+}
+
+.title2 p {
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  line-height: 0.8cm;
+}
+
+.title2 h4 {
+  padding: 10px 0;
+  position: relative;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.title2 h4::before {
+  position: absolute;
+  top: -7px;
+  right: 652px;
+  content: "";
+  display: inline;
+  background-color: #f39c12;
+  width: 35px;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 80px;
+  margin-bottom: 10px;
+  cursor: default;
+  transition: 0.4s ease-in-out;
+  text-align: left;
+}
+.review .best p {
+  border-bottom: dotted 2px #1a2f33;
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+  line-height: 0.7cm;
+  letter-spacing: 1.5px;
+}
+
+.review h5 {
+  margin-left: 7px;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  line-height: 1.5cm;
+  font-weight: 800;
+  color: #1a2f33;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+.review .best {
+  border-radius: 5px;
+  border: dotted 2px rgba(26, 47, 51, 0.2);
+  padding: 25px 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.review .best:nth-child(1) {
+  margin-right: 25px;
+}
+
+.review .best:nth-child(2) {
+  margin-left: 35px;
+}
+.bottom {
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+
+  margin-top: 10px;
+  cursor: default;
+  transition: 0.4s ease-in-out;
+}
+.visitor img {
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.visitor .date {
+  opacity: 0.6;
+  background-color: rgba(26, 47, 51, 0.2);
+  padding: 3px 10px 1px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.visitor {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.visitor h6 {
+  font-size: 12px;
+  text-decoration: uppercase;
+  letter-spacing: 1px;
+}
+
+.deli {
+  background-color: white;
+  box-shadow: 0 5px 10px 0 rgb(26 47 51 / 11%);
+  border-radius: 5px;
+  border: dotted 2px transparent;
+  /* margin: 0 15px; */
+  padding: 20px 25px;
+}
+.deli h5 {
+  margin-top: 10px;
+}
+.deli p {
+  border-bottom: dotted 2px #1a2f33;
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 15px 15px 10px;
+  line-height: 0.7cm;
+  letter-spacing: 1.5px;
+}
+
+.idk {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.idk button {
+  position: relative;
+  padding: 20px;
+  background-color: #f39c12;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 95px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.idk button:hover {
+  filter: brightness(108%);
+  transform: scale(1.015);
+}
+
+.between {
+  padding: 0 5px;
+}
+.between i:nth-child(n + 2) {
+  font-size: 10px;
+  margin: 0 2px;
+  opacity: 0.2;
+  color: #1a2f33;
+}
+
+.between i:nth-child(1) {
+  font-size: 13px;
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.last h5 i {
+  font-size: 30px;
+  margin-left: 5px;
+  color: #f39c12;
+  padding-bottom: 25px;
+  cursor: pointer;
+}
+
+.last h5 i:hover {
+  filter: brightness(108%);
+  transform: scale(1.015);
+}
+
+.last h5 {
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06cm;
+  font-size: 10px;
+  padding: 0 10px;
+  margin-right: 10px;
+}
+
+.recipe {
+  display: flex;
+  /* justify-content: space-around; */
+  margin-left: 120px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.first {
+  background-color: #fff;
+  width: 330px;
+  height: 400px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin: 0 20px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.first img {
+  width: 100%;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: 0.3s ease-in-out;
+  object-position: bottom;
+}
+
+.first .word h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  line-height: 1.2cm;
+  font-weight: 800;
+  color: #1a2f33;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.first .word p {
+  border-bottom: dotted 2px #1a2f33;
+  opacity: 0.7;
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 15px 15px 10px;
+  line-height: 0.7cm;
+  letter-spacing: 1.5px;
+}
+.first .word {
+  padding: 20px;
+  text-align: center;
+  opacity: 1;
+  font-size: 12px;
+}
+.first .img img:hover {
+  filter: brightness(108%);
+  transform: scale(1.01);
+}
+
+.note {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 98%;
+  /* margin: 25px; */
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.note button {
+  position: relative;
+  padding: 20px;
+  background-color: #f39c12;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 95px;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.note button:hover {
+  filter: brightness(108%);
+  transform: scale(1.015);
+}
+
+.hours2 {
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 26, 27, 0.6),
+      rgba(38, 47, 53, 0.5)
+    ),
+    url(https://elanta.app/nazar/tastyc-demo/img/menu/1.jpg);
+  border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 89%;
+  height: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 75px;
+  box-shadow: 0 10px 15px 0 rgb(26 47 51 / 11%);
+}
+
+.hours2 .clock h4 {
+  text-align: center;
+  margin-right: 80px;
+}
+.hours2 .button2 input {
+  width: 50%;
+  margin-right: 15px;
+  position: relative;
+  padding: 0 30px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  background-color: white;
+}
+
+.hours2 .clock h4:before {
+  visibility: hidden;
+}
+
+.hours2 .clock {
+  text-align: center;
+}
+
+.end:after {
+  content: "";
+  height: 10px;
+  width: 98%;
+  bottom: -10px;
+  position: absolute;
+  border-radius: 0 0 5px 5px;
+  background-color: #f2f6f7;
+  opacity: 0.7;
+  right: 12px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+body {
+  position: relative;
+  /* overflow: scroll; */
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(
+      180deg,
+      rgba(26, 26, 27, 0.6),
+      rgba(38, 47, 53, 0.5)
+    ),
+    url(https://elanta.app/nazar/tastyc-demo/img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
